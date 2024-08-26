@@ -1,0 +1,41 @@
+.theme-toggler {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: var(--color-grey); /* Default color for light theme */
+  transition: color 0.3s ease-in-out;
+}
+
+.theme-toggler:hover {
+  color: var(--color-black-light); /* Hover color for light theme */
+}
+
+/* Dark theme adjustments */
+:root[data-theme="dark"] .theme-toggler {
+  color: var(--color-white); /* Default color for dark theme */
+}
+
+:root[data-theme="dark"] .theme-toggler:hover {
+  color: var(--color-grey); /* Hover color for dark theme */
+}
+
+/* Ensure icons are visible and inherit color */
+.theme-toggler .icon {
+  font-size: 1.5rem;
+  display: inline-block;
+  color: inherit; /* Inherit color from .theme-toggler */
+}
+
+/* Optional: If you're using SVG icons, ensure they inherit color */
+.theme-toggler svg {
+  fill: currentColor; /* SVGs will inherit color from .theme-toggler */
+}
+
+/* Styling for the text next to the icon */
+.theme-toggler .switch-to {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  margin-right: 16px;
+}
