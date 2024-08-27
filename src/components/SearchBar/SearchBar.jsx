@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import IconSearch from '../vectorIcons/iconSearch';
+import IconSearch from '../VectorIcons/IconSearch';
 import './SearchBar.css';
 
 function SearchBar({handleInput, errorMessage}) {
